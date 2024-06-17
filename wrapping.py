@@ -1,3 +1,5 @@
+from utils import convert_to_nltk_rep
+
 def format_sample(sample, model='llama3-instruct', include_example=True):
     if model=='llamacode':
         system_message = """The task is to translate each of the premises and conclusion into FOL expressions, so that the expressions can be evaluated by a theorem solver to determine whether the conclusion follows from the premises.\nExpressions should be adhere to the format of the Python NLTK package logic module."""
